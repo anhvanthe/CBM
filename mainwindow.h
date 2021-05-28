@@ -14,6 +14,10 @@
 
 #include "fft.h"
 
+#define PORT_OPEN 0
+#define PORT_CLOSE 1
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -38,16 +42,11 @@ private slots:
     //void on_PortComBox_activated(const QString &arg1);
 
 private:
-    int m_transactionCount = 0;
-//    QLabel *m_serialPortLabel = nullptr;
+    uint32_t statePort = PORT_OPEN;
     QComboBox *m_serialPortComboBox = nullptr;
-//    QLabel *m_waitResponseLabel = nullptr;
-//    QSpinBox *m_waitResponseSpinBox = nullptr;
-//    QLabel *m_requestLabel = nullptr;
-//    QLineEdit *m_requestLineEdit = nullptr;
-//    QLabel *m_trafficLabel = nullptr;
-//    QLabel *m_statusLabel = nullptr;
-//    QPushButton *m_runButton = nullptr;
+    QSerialPort *port = nullptr;
+
+
 
 //    MasterThread m_thread;
 

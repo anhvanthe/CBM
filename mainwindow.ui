@@ -18,13 +18,16 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>20</y>
-      <width>81</width>
-      <height>41</height>
+      <y>18</y>
+      <width>79</width>
+      <height>42</height>
      </rect>
     </property>
     <property name="toolTipDuration">
      <number>-4</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);</string>
     </property>
     <property name="text">
      <string>CONNECT</string>
@@ -79,6 +82,22 @@
     </property>
     <property name="autoRepeatInterval">
      <number>93</number>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>651</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
     </property>
    </widget>
   </widget>
